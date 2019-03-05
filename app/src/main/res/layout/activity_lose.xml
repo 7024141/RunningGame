@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_lose"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#FF2F4F4F"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="60dp"
+        android:text="L  O  S  E !"
+        />
+
+    <TextView
+        android:id="@+id/tv_tex"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#FF2F4F4F"
+        app:layout_constraintTop_toBottomOf="@id/tv_lose"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_lose"
+        app:layout_constraintRight_toRightOf="@+id/tv_lose"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="You were caught by bees."
+        />
+
+    <Button
+        android:id="@+id/bt_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="50dp"
+        android:text="Again"
+        android:textSize="30dp" />
+
+
+</android.support.constraint.ConstraintLayout>

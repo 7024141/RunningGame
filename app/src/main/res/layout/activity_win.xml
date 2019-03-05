@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_win"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_win"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="50dp"
+        android:text="Congratulations!"
+        />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tv_win"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_win"
+        app:layout_constraintRight_toRightOf="@+id/tv_win"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="You succeeded in getting rid of the bees."
+        />
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="50dp"
+        android:text="Back"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tv_text"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_text"
+        app:layout_constraintRight_toRightOf="@+id/tv_text"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Your score is: "/>
+
+
+</android.support.constraint.ConstraintLayout>
